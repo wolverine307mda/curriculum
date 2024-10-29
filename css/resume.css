@@ -1,0 +1,110 @@
+body {
+    background-image: url('../Imgs/fondo_curriculum.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 15px;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.social-links img {
+    margin: 10px;
+    transition: transform 0.3s;
+}
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+.habilidades-column {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 15px;
+}
+
+.idiomas-column {
+    padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+    .col-md-4, .col-md-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .card-title {
+        font-size: 1.1rem;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    .habilidades-column {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .idiomas-column {
+        padding-top: 10px;
+    }
+}
