@@ -69,6 +69,7 @@ body::before {
 .social-links img {
     margin: 10px;
     transition: transform 0.3s;
+    border-radius: 5px;
 }
 .social-links img:hover {
     transform: scale(1.1);
