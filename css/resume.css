@@ -1,3 +1,11 @@
+/* Botón para modo oscuro */
+#darkModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
 body {
     background-image: url('../Imgs/fondo_curriculum.jpg');
     background-size: cover;
@@ -44,11 +52,13 @@ body::before {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card-title {
+/* Títulos en morado */
+.card-title,
+h2 {
     font-size: 1.3rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: #333;
+    color: #a673d1; /* Color morado */
 }
 
 .profile-img {
@@ -66,46 +76,53 @@ body::before {
     justify-content: center;
     margin-top: 15px;
 }
+
 .social-links img {
     margin: 10px;
     transition: transform 0.3s;
     border-radius: 5px;
 }
+
 .social-links img:hover {
     transform: scale(1.1);
 }
 
-.habilidades-column {
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-    padding-right: 15px;
+/* Estilos para el modo oscuro */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #e4e4e4;
 }
 
-.idiomas-column {
-    padding-left: 15px;
+.dark-mode .card {
+    background-color: rgba(30, 30, 30, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 768px) {
-    .container {
-        max-width: 100%;
-    }
-    .col-md-4, .col-md-8 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .card-title {
-        font-size: 1.1rem;
-    }
-    .profile-img {
-        width: 120px;
-        height: 120px;
-    }
-    .habilidades-column {
-        border-right: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-    }
-    .idiomas-column {
-        padding-top: 10px;
-    }
+/* Mantener títulos en morado en modo oscuro */
+.dark-mode .card-title,
+.dark-mode h2 {
+    color: #a673d1;
+}
+
+.dark-mode a {
+    color: #a673d1; 
+}
+
+.dark-mode .profile-img {
+    border-color: #a673d1;
+}
+
+.dark-mode .btn-dark {
+    background-color: #a673d1;
+    border-color: #a673d1;
+}
+
+.dark-mode .social-links img {
+    filter: invert(1); 
+}
+
+.dark-mode .list-group-item {
+    background-color: #333;
+    color: #e4e4e4;
+    border-color: #444;
 }
