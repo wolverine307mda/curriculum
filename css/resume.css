@@ -6,6 +6,20 @@
     z-index: 1000;
 }
 
+#backButton {
+    position: fixed;
+    top: 20px;
+    left: 20px; /* Posicionado en el lado izquierdo */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+
 body {
     background-image: url('../Imgs/fondo_curriculum.jpg');
     background-size: cover;
