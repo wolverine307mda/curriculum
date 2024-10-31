@@ -9,7 +9,7 @@
 #backButton {
     position: fixed;
     top: 20px;
-    left: 20px; /* Posicionado en el lado izquierdo */
+    left: 20px;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -17,8 +17,17 @@
     font-size: 16px;
     cursor: pointer;
     color: white;
+    background-color: #a673d1;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+#backButton:hover {
+    background-color: #fbdce7;
+    color: #8a2d7b;
+    transform: scale(1.05);
+}
 
 body {
     background-image: url('../Imgs/fondo_curriculum.jpg');
@@ -129,6 +138,12 @@ h2 {
 .dark-mode .btn-dark {
     background-color: #a673d1;
     border-color: #a673d1;
+}
+
+.btn-dark:hover {
+    background-color: #fbdce7;
+    color: #8a2d7b;
+    transform: scale(1.05);
 }
 
 .dark-mode .social-links img {
