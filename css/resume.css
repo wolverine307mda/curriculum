@@ -30,6 +30,7 @@
 }
 
 body {
+    background-color: black;
     background-image: url('../Imgs/fondo_curriculum.jpg');
     background-size: cover;
     background-attachment: fixed;
