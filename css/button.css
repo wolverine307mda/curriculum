@@ -1,0 +1,69 @@
+:root {
+    --main-focus: #9c27b0; /* Color principal al interactuar */
+    --font-color: #4a235a; /* Color del texto */
+    --bg-color-sub: #e1bee7; /* Color secundario */
+    --bg-color: #f3e5f5; /* Color de fondo */
+    --main-color: #9c27b0; /* Color principal */
+  }
+
+  .button {
+    z-index: 1000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+
+  .button .button__text {
+    transform: translateX(22px);
+    color: var(--font-color);
+    font-weight: 600;
+  }
+
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button .svg {
+    width: 20px;
+    margin-right: 5px;
+    fill: var(--main-color);
+  }
+
+  .button:hover {
+    background: var(--main-focus);
+  }
+
+  .button:hover .button__text {
+    color: transparent;
+  }
+
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+
+  .button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+  }
