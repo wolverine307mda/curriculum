@@ -1,9 +1,9 @@
 :root {
-  --main-focus: #9c27b0; /* Color principal al interactuar */
+  --main-focus: #a673d1; /* Color principal al interactuar */
   --font-color: #4a235a; /* Color del texto */
   --bg-color-sub: #e1bee7; /* Color secundario */
   --bg-color: #f3e5f5; /* Color de fondo */
-  --main-color: #9c27b0; /* Color principal */
+  --main-color: #a673d1; /* Color principal */
 }
 
 .button {
