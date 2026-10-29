@@ -1,203 +1,242 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-mode="light" data-color="naranja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum Vitae - Mario de Domingo</title>
-    <link rel="shortcut icon" href="./Imgs/guiño.webp" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="./css/resume.css">
-    <link rel="stylesheet" href="./css/loader.css">
-    <link rel="stylesheet" href="./css/button.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Currículum · Mario de Domingo</title>
+  <meta name="description" content="Currículum de Mario de Domingo Álvarez, desarrollador web en Madrid: experiencia, formación, habilidades y cursos.">
+  <meta name="theme-color" content="#ff7a1f">
+  <meta property="og:title" content="Currículum · Mario de Domingo">
+  <meta property="og:description" content="Desarrollador web en Madrid. Angular, TypeScript, C#, VB.NET y .NET.">
+  <meta property="og:image" content="https://wolverine307mda.github.io/curriculum/assets/img/foto.webp">
+  <meta property="og:type" content="profile">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ff7a1f'/%3E%3Ctext x='16' y='23' font-family='Arial Black,Arial' font-weight='900' font-size='17' fill='%23050f16' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=panchang@700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/cv.css?v=202610301300">
+  <script>
+    // El mismo tema que el portfolio (mismo dominio, mismas claves), antes de pintar para que no parpadee
+    (() => {
+      const d = document.documentElement;
+      d.classList.add('js');
+      let mode = 'system', color = 'naranja';
+      try { mode = localStorage.getItem('mode') || mode; color = localStorage.getItem('color') || color; } catch {}
+      const dark = mode === 'dark' || (mode === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+      d.dataset.mode = dark ? 'dark' : 'light';
+      d.dataset.color = color;
+    })();
+  </script>
 </head>
-<div class="banter-loader" id="loader">
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-    <div class="banter-loader__box"></div>
-</div>
-<body class="contenido dark-mode">
-<a href="https://wolverine307mda.github.io" id="backButton" class="btn btn-dark"><i class="fas fa-arrow-left"></i></a>
-<button id="darkModeToggle" class="btn btn-dark"><i class="fas fa-sun"></i></button>
-<div class="container my-5">
-    <a href="./pdf/CV Mario de Domingo Alvarez.pdf" class="button" download>
-        <span class="button__text">Download</span>
-        <span class="button__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg">
-                <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
-                <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
-                <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
-            </svg>
-        </span>
-    </a>    
-    <div class="row">
-        <div class="col-md-12 col-lg-4">
-            <div class="card text-center p-4">
-                <div class="card-body">
-                    <img src="./Imgs/foto_mia.png" alt="Foto de Mario de Domingo" class="profile-img mb-3">
-                    <h2>Mario de Domingo</h2>
-                    <br>
-                    <p><strong>Teléfono:</strong> +34 681 01 34 87</p>
-                    <div style="height: 5px;"></div>
-                    <div class="social-links d-flex justify-content-center"> 
-                        <a href="mailto:dedomingoalvarezmario@gmail.com" target="_blank">
-                            <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/mario-de-domingo-alvarez-615535295/" target="_blank">
-                            <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-                        </a>
-                        <a href="https://github.com/wolverine307mda" target="_blank">
-                            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Sobre mí</h5>
-                    <p class="card-text">
-                        Soy estudiante de segundo año del ciclo formativo de Técnico Superior en Desarrollo de Aplicaciones Web. Tengo un especial interés por el desarrollo frontend, disfrutando del diseño de interfaces funcionales, aunque también me atrae el desarrollo backend y áreas de DevOps. Me defino como una persona adaptable, con ganas de aprender y aportar valor a los proyectos en los que participo.
-                    </p>
-                </div>
-            </div>
+
+<body>
+  <a class="skip" href="#sobre-mi">Saltar al contenido</a>
+
+  <header class="top" data-top>
+    <a class="top__mark" href="https://wolverine307mda.github.io/" aria-label="Volver al portfolio">MDA</a>
+    <nav class="top__nav" aria-label="Secciones del currículum">
+      <a class="link top__opt" href="#experiencia">Experiencia</a>
+      <a class="link top__opt" href="#formacion">Formación</a>
+      <a class="link top__opt" href="#habilidades">Habilidades</a>
+      <a class="link top__opt2" href="#cursos">Cursos</a>
+      <div class="top__tools">
+        <button class="icon-btn" type="button" data-palette-toggle aria-expanded="false" aria-controls="palette" aria-label="Elegir tema y color">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.7 3.3a1.6 1.6 0 0 0-2.3 0l-8.2 8.2 2.3 2.3 8.2-8.2a1.6 1.6 0 0 0 0-2.3z"/><path d="M9.3 12.9c-2 0-3.5 1.5-3.5 3.4 0 1.6-.9 2.8-2.3 3.3 1 .9 2.4 1.4 3.9 1.4 2.9 0 4.9-2 4.9-4.6l-3-3.5z"/></svg>
+        </button>
+        <a class="icon-btn" href="pdf/CV%20Mario%20de%20Domingo%20Alvarez.pdf" download aria-label="Descargar el currículum en PDF">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Panel de tema: el mismo que en el portfolio -->
+  <div class="palette" id="palette" role="dialog" aria-label="Tema y color" hidden>
+    <fieldset class="palette__group">
+      <legend><code>modo</code></legend>
+      <div class="segmented">
+        <button type="button" data-mode-set="light">Día</button>
+        <button type="button" data-mode-set="dark">Noche</button>
+        <button type="button" data-mode-set="system">Sistema</button>
+      </div>
+    </fieldset>
+    <fieldset class="palette__group">
+      <legend><code>color</code></legend>
+      <div class="swatches">
+        <button type="button" class="swatch" data-color-set="naranja" style="--sw:#ff7a1f">Naranja</button>
+        <button type="button" class="swatch" data-color-set="lima" style="--sw:#c8f53c">Lima</button>
+        <button type="button" class="swatch" data-color-set="cobalto" style="--sw:#3355ff">Cobalto</button>
+        <button type="button" class="swatch" data-color-set="rosa" style="--sw:#ff5fa2">Rosa</button>
+      </div>
+    </fieldset>
+    <p class="palette__note">Se comparte con el portfolio.</p>
+  </div>
+
+  <main>
+    <!-- Portada: nombre, foto y contacto en una viñeta -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__main">
+        <p class="hero__kicker" data-load style="--d:80ms"><code>// currículum</code></p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__name" data-load style="--d:160ms">Mario de Domingo</span>
+          <span class="hero__role" data-load style="--d:260ms">Desarrollador web</span>
+        </h1>
+        <div class="hero__actions" data-load style="--d:360ms">
+          <a class="button" href="pdf/CV%20Mario%20de%20Domingo%20Alvarez.pdf" download>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+            Descargar PDF
+          </a>
+          <button class="button button--ghost" type="button" data-print>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9V3h10v6M7 17H4v-7h16v7h-3M7 14h10v7H7z"/></svg>
+            Imprimir
+          </button>
         </div>
+      </div>
 
-        <div class="col-md-12 col-lg-8">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Datos Académicos</h5><br>
-                    <ul>
-                        <li><strong>Bachillerato:</strong> Especialización en Ciencias de la Salud, IES Griñón, 2023</li>
-                        <li><strong>Técnico Superior:</strong> Desarrollo de Aplicaciones Web, IES Luis Vives</li>
-                    </ul>
-                </div>
-            </div>
+      <aside class="hero__card" data-load style="--d:300ms" aria-label="Contacto">
+        <img class="hero__photo" src="assets/img/foto.webp" width="419" height="419" alt="Foto de Mario de Domingo">
+        <dl class="facts">
+          <div><dt>teléfono</dt><dd><a class="link" href="tel:+34681013487">+34 681 01 34 87</a></dd></div>
+          <div><dt>email</dt><dd><a class="link" href="mailto:dedomingoalvarezmario@gmail.com">dedomingoalvarezmario<wbr>@gmail.com</a></dd></div>
+          <div><dt>base</dt><dd>Griñón, Madrid</dd></div>
+          <div><dt>web</dt><dd><a class="link" href="https://wolverine307mda.github.io/">wolverine307mda.github.io</a></dd></div>
+          <div><dt>linkedin</dt><dd><a class="link" href="https://www.linkedin.com/in/mario-de-domingo-%C3%A1lvarez-615535295/">mario-de-domingo-álvarez</a></dd></div>
+        </dl>
+      </aside>
+    </section>
 
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Experiencia Laboral</h5><br>
-                    <ul>                  
-                        <li><strong>Desarrollador</strong> - Fontventa S.L. | Julio 2025 - Actualidad</li>
-                        <li><strong>Desarrollador</strong> - Fontventa S.L. | Marzo 2025 - Junio 2025 (Prácticas)</li>
-                        <li><strong>Peón</strong> - Aluminios Jorsan, S.L. | Julio 2023 - Septiembre 2023</li>
-                        <li><strong>Monitor de Comedor</strong> - Empresa ARAMARK | Junio 2023</li>
-                        <li><strong>Peón</strong> - Aluminios Jorsan, S.L. | Junio 2022 - Septiembre 2022</li>
-                        <li><strong>Peón</strong> - Aluminios Jorsan, S.L. | Junio 2021 - Septiembre 2021</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- Sobre mí -->
+    <section class="about" id="sobre-mi" aria-labelledby="about-title">
+      <h2 class="label" id="about-title" data-reveal><code>01</code> Sobre mí</h2>
+      <div class="about__body">
+        <p class="about__statement" data-reveal>Desarrollador web formado en DAW, con experiencia en programación a medida, diseño web y desarrollo de aplicaciones.</p>
+        <p data-reveal style="--i:1">Trabajo en <strong>Fontventa S.L.</strong>, donde mantengo y creo soluciones digitales pensadas para la eficiencia y la experiencia de usuario. Lo compagino con proyectos propios y colaborativos, que me mantienen al día con las tecnologías del sector.</p>
+      </div>
+    </section>
 
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Habilidades e Idiomas</h5><br>
-                    <div class="row">
-                        <div class="col-md-6 habilidades-column">
-                            <ul>
-                                <li>Desarrollo frontend.</li>
-                                <li>Desarrollo backend.</li>
-                                <li>Manejo de herramientas DevOps.</li>
-                                <li>Adaptabilidad y aprendizaje rápido.</li>
-                                <li>Comunicación efectiva</li>
-                                <li>Trabajo en equipo</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 idiomas-column">
-                            <ul>
-                                <li><strong>Castellano:</strong> (Lengua Materna)</li>
-                                <li><strong>Inglés:</strong> (B2)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div> 
+    <!-- Experiencia: línea de tiempo que se dibuja al bajar -->
+    <section class="xp" id="experiencia" aria-labelledby="xp-title">
+      <h2 class="label" id="xp-title" data-reveal><code>02</code> Experiencia</h2>
+      <ol class="timeline" data-timeline>
+        <li class="job" data-reveal>
+          <p class="job__when"><code>jul 2025 — actualidad</code></p>
+          <h3 class="job__company">Fontventa S.L.</h3>
+          <p class="job__role">Desarrollador junior</p>
+          <p class="job__text">Desarrollos a medida y proyectos digitales para clientes, y mantenimiento de plataformas para que sigan siendo funcionales y eficientes.</p>
+          <ul class="tags"><li>C#</li><li>VB.NET</li><li>.NET</li><li>Angular</li><li>SQL Server</li></ul>
+        </li>
+        <li class="job" data-reveal>
+          <p class="job__when"><code>mar 2025 — jun 2025</code></p>
+          <h3 class="job__company">Fontventa S.L.</h3>
+          <p class="job__role">Desarrollador en prácticas</p>
+          <p class="job__text">Desarrollo de una intranet corporativa real para un cliente, junto a mi equipo de prácticas.</p>
+        </li>
+        <li class="job job--small" data-reveal>
+          <p class="job__when"><code>jun 2023</code></p>
+          <h3 class="job__company">Aramark</h3>
+          <p class="job__role">Monitor de comedor</p>
+          <p class="job__text">Control de entrada y salida, dinamización de actividades, seguridad y valores sociales en el comedor escolar.</p>
+        </li>
+        <li class="job job--small" data-reveal>
+          <p class="job__when"><code>jul — ago · 2021, 2022 y 2023</code></p>
+          <h3 class="job__company">Aluminios Jorsan S.A.</h3>
+          <p class="job__role">Peón de construcción y mozo de almacén</p>
+          <p class="job__text">Instalación y gestión de materiales, orden y mantenimiento del instrumental.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Formación -->
+    <section class="edu" id="formacion" aria-labelledby="edu-title">
+      <h2 class="label" id="edu-title" data-reveal><code>03</code> Formación</h2>
+      <ul class="edu__list">
+        <li class="panel" data-reveal>
+          <p class="panel__when"><code>2023 — 2025</code></p>
+          <h3 class="panel__title">Técnico Superior en DAW</h3>
+          <p>Desarrollo de Aplicaciones Web · IES Luis Vives, Leganés</p>
+        </li>
+        <li class="panel" data-reveal style="--i:1">
+          <p class="panel__when"><code>2019 — 2023</code></p>
+          <h3 class="panel__title">Bachillerato</h3>
+          <p>Ciencias de la Salud · IES Griñón</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Habilidades, idiomas y otros -->
+    <section class="skills" id="habilidades" aria-labelledby="skills-title">
+      <h2 class="label" id="skills-title" data-reveal><code>04</code> Habilidades</h2>
+      <div class="skills__grid">
+        <div class="group" data-reveal>
+          <h3 class="group__name"><code>// frontend</code></h3>
+          <ul class="tags tags--big"><li>Angular</li><li>TypeScript</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>RxJS</li><li>SSR en Angular</li><li>Bootstrap</li><li>Material UI</li></ul>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Cursos</h5>
-                    <div id="imageCarousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./Imgs/cursos/certificado_curso_de_git_page-0001.jpg" class="d-block w-100" alt="Curso Git">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Imgs/cursos/certificado_curso_de_docker_para_desarrolladores_page-0001.jpg" class="d-block w-100" alt="Curso Docker">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Imgs/cursos/certificado_curso_de_html5_y_css3_page-0001.jpg" class="d-block w-100" alt="Curso html y css">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Imgs/cursos/certificado_servidor_web_apache_2.4_page-0001.jpg" class="d-block w-100" alt="Curso servidor web Apache">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Imgs/cursos/certificado_curso_de_desarrollo_de_una_api_rest_con_spring_boot_page-0001.jpg" class="d-block w-100" alt="Curso Api Rest con Spring boot">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Imgs/cursos/certificado_curso_de_elementos_avanzados_en_tu_api_rest_con_spring_boot_page-0001.jpg" class="d-block w-100" alt="Curso elementos avanzados api rest">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Imgs/cursos/certificado_curso_de_seguridad_en_tu_api_rest_con_spring_boot_page-0001.jpg" class="d-block w-100" alt="Curso seguridad api rest">
-                            </div>
-                            </div>
-                    </div>
-                        <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Anterior</span>
-                        </a>
-                        <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Siguiente</span>
-                        </a>
-                    </div>
-            </div>
+        <div class="group" data-reveal style="--i:1">
+          <h3 class="group__name"><code>// backend</code></h3>
+          <ul class="tags tags--big"><li>C#</li><li>.NET</li><li>VB.NET</li><li>Kotlin</li><li>Java</li><li>Spring Boot</li><li>JWT</li></ul>
         </div>
+        <div class="group" data-reveal style="--i:2">
+          <h3 class="group__name"><code>// datos</code></h3>
+          <ul class="tags tags--big"><li>SQL Server</li><li>MySQL</li><li>PostgreSQL</li><li>SQLite</li></ul>
+        </div>
+        <div class="group" data-reveal style="--i:3">
+          <h3 class="group__name"><code>// herramientas</code></h3>
+          <ul class="tags tags--big"><li>Git</li><li>GitHub</li><li>Visual Studio</li><li>VS Code</li><li>Postman</li><li>Docker</li></ul>
+        </div>
+        <div class="group" data-reveal>
+          <h3 class="group__name"><code>// personales</code></h3>
+          <ul class="tags tags--big"><li>Resolución de problemas</li><li>Adaptación rápida</li><li>Trabajo en equipo</li><li>Comunicación</li></ul>
+        </div>
+        <div class="group" data-reveal style="--i:1">
+          <h3 class="group__name"><code>// idiomas</code></h3>
+          <ul class="langs">
+            <li><span>Castellano</span><span class="langs__bar" style="--v:1"></span><code>nativo</code></li>
+            <li><span>Inglés</span><span class="langs__bar" style="--v:.72"></span><code>B2</code></li>
+          </ul>
+          <h3 class="group__name group__name--next"><code>// otros</code></h3>
+          <p>Carnet de conducir B · Coche propio</p>
+        </div>
+      </div>
+    </section>
 
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Extras</h5>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul class="list-group">
-                                <li class="list-group-item">Git</li>
-                                <li class="list-group-item">GitHub</li>
-                                <li class="list-group-item">GitKraken</li>
-                                <li class="list-group-item">PostgresSQL</li>
-                                <li class="list-group-item">SQLite</li>
-                                <li class="list-group-item">MySQL</li>
-                                <li class="list-group-item">JavaScript</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="list-group">
-                                <li class="list-group-item">HTML & CSS</li>
-                                <li class="list-group-item">Bootstrap</li>
-                                <li class="list-group-item">Docker</li>
-                                <li class="list-group-item">Kotlin</li>
-                                <li class="list-group-item">Java</li>
-                                <li class="list-group-item">Spring Boot</li>
-                                <li class="list-group-item">Postman</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="./js/script.js"></script>
-<script src="./js/loader.js"></script>
+    <!-- Cursos: los certificados se abren en grande -->
+    <section class="courses" id="cursos" aria-labelledby="courses-title">
+      <div class="courses__head">
+        <h2 class="label" id="courses-title" data-reveal><code>05</code> Cursos</h2>
+        <p class="courses__sum" data-reveal><code>7 cursos · 80 horas · OpenWebinars</code></p>
+      </div>
+      <ul class="courses__grid">
+        <li data-reveal><button class="cert" type="button" data-cert="assets/img/cursos/docker.webp"><img src="assets/img/cursos/docker.webp" width="1600" height="1132" alt="" loading="lazy"><span class="cert__name">Docker para desarrolladores</span><code class="cert__meta">15 h · oct 2024</code></button></li>
+        <li data-reveal style="--i:1"><button class="cert" type="button" data-cert="assets/img/cursos/git.webp"><img src="assets/img/cursos/git.webp" width="1600" height="1132" alt="" loading="lazy"><span class="cert__name">Git</span><code class="cert__meta">7 h · oct 2024</code></button></li>
+        <li data-reveal style="--i:2"><button class="cert" type="button" data-cert="assets/img/cursos/html-css.webp"><img src="assets/img/cursos/html-css.webp" width="1600" height="1132" alt="" loading="lazy"><span class="cert__name">HTML5 y CSS3</span><code class="cert__meta">10 h · oct 2024</code></button></li>
+        <li data-reveal><button class="cert" type="button" data-cert="assets/img/cursos/apache.webp"><img src="assets/img/cursos/apache.webp" width="1600" height="1132" alt="" loading="lazy"><span class="cert__name">Servidor web Apache 2.4</span><code class="cert__meta">12 h · nov 2024</code></button></li>
+        <li data-reveal style="--i:1"><button class="cert" type="button" data-cert="assets/img/cursos/spring-api-rest.webp"><img src="assets/img/cursos/spring-api-rest.webp" width="1600" height="1132" alt="" loading="lazy"><span class="cert__name">API REST con Spring Boot</span><code class="cert__meta">12 h · dic 2024</code></button></li>
+        <li data-reveal style="--i:2"><button class="cert" type="button" data-cert="assets/img/cursos/spring-avanzado.webp"><img src="assets/img/cursos/spring-avanzado.webp" width="1600" height="1132" alt="" loading="lazy"><span class="cert__name">API REST avanzada con Spring Boot</span><code class="cert__meta">12 h · dic 2024</code></button></li>
+        <li data-reveal><button class="cert" type="button" data-cert="assets/img/cursos/spring-seguridad.webp"><img src="assets/img/cursos/spring-seguridad.webp" width="1600" height="1132" alt="" loading="lazy"><span class="cert__name">Seguridad en API REST con Spring Boot</span><code class="cert__meta">12 h · dic 2024</code></button></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Visor de certificados -->
+  <dialog class="viewer" data-viewer aria-label="Certificado">
+    <button class="icon-btn viewer__close" type="button" data-viewer-close aria-label="Cerrar">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <img class="viewer__img" src="" alt="" data-viewer-img>
+    <p class="viewer__name" data-viewer-name></p>
+  </dialog>
+
+  <footer class="footer">
+    <p>© <span data-year>2026</span> Mario de Domingo Álvarez</p>
+    <a class="link link--line" href="https://wolverine307mda.github.io/">Ver mi portfolio</a>
+  </footer>
+
+  <script src="assets/js/cv.js?v=202610301300"></script>
 </body>
+
 </html>

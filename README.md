@@ -1,58 +1,9 @@
-# Mario de Domingo
+# Currículum · Mario de Domingo
 
-## Información de Contacto
-- **Teléfono:** +34 681 01 34 87
-- **Email:** dedomingoalvarezmario@gmail.com
+Currículum web de Mario de Domingo Álvarez, desarrollador web en Madrid.
+Publicado en https://wolverine307mda.github.io/curriculum/
 
-## Perfil Profesional
-Estudiante de Desarrollo de Aplicaciones Web (DAW) altamente motivado, con una sólida base en programación y tecnologías web. Destaco por mi capacidad de aprendizaje rápido, adaptabilidad y empatía. Busco oportunidades para aplicar mis habilidades técnicas y contribuir en proyectos innovadores.
-
-## Formación Académica
-- **Técnico Superior (En Proceso):** Desarrollo de Aplicaciones Web, IES Luis Vives
-- **Bachillerato:** Especialización en Ciencias de la Salud, IES Griñón (2023)
-
-## Experiencia Laboral
-- **Monitor de Comedor** - ARAMARK (Junio 2023)
-- **Peón** - Aluminios Jorsan, S.L. (Junio 2021 - Septiembre 2021)
-- **Peón** - Aluminios Jorsan, S.L. (Junio 2022 - Septiembre 2022)
-- **Peón** - Aluminios Jorsan, S.L. (Junio 2023 - Septiembre 2023)
-
-## Habilidades Técnicas
-### Lenguajes de Programación
-- Java
-- Kotlin
-- JavaScript
-- HTML & CSS
-
-### Bases de Datos
-- PostgreSQL
-- SQLite
-- MySQL
-
-### Herramientas y Tecnologías
-- Git
-- GitHub
-- GitKraken
-- Bootstrap
-- Docker
-- Spring Boot
-- Postman
-
-## Habilidades Personales
-- Excelente comunicación
-- Rápida capacidad de aprendizaje
-- Adaptabilidad
-- Empatía
-- Manejo de ofimática
-
-## Idiomas
-- **Castellano:** Lengua Materna
-- **Inglés:** Nivel básico
-
-## Información Adicional
-- Disponibilidad: Mañanas y fines de semana
-- Carnet de conducir
-- Vehículo propio
-
-## Contacto
-Para oportunidades profesionales o colaboraciones, no dude en contactarme.
+- Mismo estilo y tema (día, noche y color) que el portfolio: https://wolverine307mda.github.io/
+- Sin dependencias: HTML, CSS y JavaScript.
+- Botones para descargar el PDF (`pdf/`) e imprimir; la hoja de impresión sale limpia en A4.
+- Certificados de los cursos en `assets/img/cursos/`, con visor al pulsarlos.
