@@ -41,6 +41,30 @@
   systemDark.addEventListener('change', () => { if (mode === 'system') render(); });
   render();
 
+  /* ---------- «Solo informática»: oculta el trabajo y la formación que no son del sector ---------- */
+  // Se recuerda en este navegador y se puede compartir: ?it=1 abre el CV ya filtrado.
+  const itBtn = document.querySelector('[data-it-toggle]');
+  const itNote = document.querySelector('[data-it-note]');
+  const hidden = document.querySelectorAll('[data-general]').length;
+  const fromUrl = new URLSearchParams(location.search).get('it');
+  let onlyIt = fromUrl !== null ? fromUrl === '1' : store.get('cv-it', '0') === '1';
+  const setIt = (on, save) => {
+    onlyIt = on;
+    html.classList.toggle('is-it', on);
+    itBtn.setAttribute('aria-pressed', String(on));
+    itNote.textContent = on ? `// solo informática · ${hidden} apartados ocultos` : '';
+    if (save) {
+      store.set('cv-it', on ? '1' : '0');
+      const url = new URL(location.href);
+      if (on) url.searchParams.set('it', '1'); else url.searchParams.delete('it');
+      history.replaceState(null, '', url);
+    }
+    // la línea de tiempo cambia de alto: que se recalcule
+    requestAnimationFrame(() => dispatchEvent(new Event('scroll')));
+  };
+  itBtn.addEventListener('click', () => setIt(!onlyIt, true));
+  setIt(onlyIt, false);
+
   /* ---------- Panel del pincel ---------- */
   const paletteBtn = document.querySelector('[data-palette-toggle]');
   const palette = document.getElementById('palette');

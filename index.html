@@ -9,13 +9,24 @@
   <meta name="theme-color" content="#ff7a1f">
   <meta property="og:title" content="Currículum · Mario de Domingo">
   <meta property="og:description" content="Desarrollador web en Madrid. Angular, TypeScript, C#, VB.NET y .NET.">
-  <meta property="og:image" content="https://wolverine307mda.github.io/curriculum/assets/img/foto.webp">
+  <meta property="og:image" content="https://wolverine307mda.github.io/curriculum/assets/img/compartir.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Foto de Mario de Domingo junto a su nombre, «Desarrollador web · Madrid» y sus tecnologías">
+  <meta property="og:url" content="https://wolverine307mda.github.io/curriculum/">
+  <meta property="og:site_name" content="Mario de Domingo">
+  <meta property="og:locale" content="es_ES">
   <meta property="og:type" content="profile">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Currículum · Mario de Domingo">
+  <meta name="twitter:description" content="Desarrollador web en Madrid. Angular, TypeScript, C#, VB.NET y .NET.">
+  <meta name="twitter:image" content="https://wolverine307mda.github.io/curriculum/assets/img/compartir.jpg">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ff7a1f'/%3E%3Ctext x='16' y='23' font-family='Arial Black,Arial' font-weight='900' font-size='17' fill='%23050f16' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
   <link rel="preload" href="assets/fonts/panchang-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/switzer-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/fonts/fonts.css?v=202610302100">
-  <link rel="stylesheet" href="assets/css/cv.css?v=202610302100">
+  <link rel="stylesheet" href="assets/fonts/fonts.css?v=202610301800">
+  <link rel="stylesheet" href="assets/css/cv.css?v=202610301800">
   <script>
     // El mismo tema que el portfolio (mismo dominio, mismas claves), antes de pintar para que no parpadee
     (() => {
@@ -41,6 +52,10 @@
       <a class="link top__opt" href="#habilidades">Habilidades</a>
       <a class="link top__opt2" href="#cursos">Cursos</a>
       <div class="top__tools">
+        <button class="switch" type="button" data-it-toggle aria-pressed="false" aria-label="Mostrar solo lo relacionado con la informática">
+          <span class="switch__track" aria-hidden="true"><span class="switch__thumb"><code>&lt;/&gt;</code></span></span>
+          <span class="switch__label" aria-hidden="true">Solo informática</span>
+        </button>
         <button class="icon-btn" type="button" data-palette-toggle aria-expanded="false" aria-controls="palette" aria-label="Elegir tema y color">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.7 3.3a1.6 1.6 0 0 0-2.3 0l-8.2 8.2 2.3 2.3 8.2-8.2a1.6 1.6 0 0 0 0-2.3z"/><path d="M9.3 12.9c-2 0-3.5 1.5-3.5 3.4 0 1.6-.9 2.8-2.3 3.3 1 .9 2.4 1.4 3.9 1.4 2.9 0 4.9-2 4.9-4.6l-3-3.5z"/></svg>
         </button>
@@ -68,6 +83,7 @@
         <button type="button" class="swatch" data-color-set="lima" style="--sw:#c8f53c">Lima</button>
         <button type="button" class="swatch" data-color-set="cobalto" style="--sw:#3355ff">Cobalto</button>
         <button type="button" class="swatch" data-color-set="rosa" style="--sw:#ff5fa2">Rosa</button>
+        <button type="button" class="swatch" data-color-set="rojo" style="--sw:#e62429">Rojo</button>
       </div>
     </fieldset>
     <p class="palette__note">Se comparte con el portfolio.</p>
@@ -117,7 +133,10 @@
 
     <!-- Experiencia: línea de tiempo que se dibuja al bajar -->
     <section class="xp" id="experiencia" aria-labelledby="xp-title">
-      <h2 class="label" id="xp-title" data-reveal><code>02</code> Experiencia</h2>
+      <div class="label-row">
+        <h2 class="label" id="xp-title" data-reveal><code>02</code> Experiencia</h2>
+        <p class="it-note" data-it-note aria-live="polite"></p>
+      </div>
       <ol class="timeline" data-timeline>
         <li class="job" data-reveal>
           <p class="job__when"><code>jul 2025 — actualidad</code></p>
@@ -132,13 +151,13 @@
           <p class="job__role">Desarrollador en prácticas</p>
           <p class="job__text">Desarrollo de una intranet corporativa real para un cliente, junto a mi equipo de prácticas.</p>
         </li>
-        <li class="job job--small" data-reveal>
+        <li class="job job--small" data-general data-reveal>
           <p class="job__when"><code>jun 2023</code></p>
           <h3 class="job__company">Aramark</h3>
           <p class="job__role">Monitor de comedor</p>
           <p class="job__text">Control de entrada y salida, dinamización de actividades, seguridad y valores sociales en el comedor escolar.</p>
         </li>
-        <li class="job job--small" data-reveal>
+        <li class="job job--small" data-general data-reveal>
           <p class="job__when"><code>jul — ago · 2021, 2022 y 2023</code></p>
           <h3 class="job__company">Aluminios Jorsan S.A.</h3>
           <p class="job__role">Peón de construcción y mozo de almacén</p>
@@ -156,7 +175,7 @@
           <h3 class="panel__title">Técnico Superior en DAW</h3>
           <p>Desarrollo de Aplicaciones Web · IES Luis Vives, Leganés</p>
         </li>
-        <li class="panel" data-reveal style="--i:1">
+        <li class="panel" data-general data-reveal style="--i:1">
           <p class="panel__when"><code>2019 — 2023</code></p>
           <h3 class="panel__title">Bachillerato</h3>
           <p>Ciencias de la Salud · IES Griñón</p>
@@ -194,8 +213,10 @@
             <li><span>Castellano</span><span class="langs__bar" style="--v:1"></span><code>nativo</code></li>
             <li><span>Inglés</span><span class="langs__bar" style="--v:.72"></span><code>B2</code></li>
           </ul>
-          <h3 class="group__name group__name--next"><code>// otros</code></h3>
-          <p>Carnet de conducir B · Coche propio</p>
+          <div data-general>
+            <h3 class="group__name group__name--next"><code>// otros</code></h3>
+            <p>Carnet de conducir B · Coche propio</p>
+          </div>
         </div>
       </div>
     </section>
@@ -232,7 +253,7 @@
     <span class="footer__links"><a class="link link--line" href="https://wolverine307mda.github.io/">Ver mi portfolio</a> · <a class="link link--line" href="https://wolverine307mda.github.io/legal.html">Aviso legal y privacidad</a></span>
   </footer>
 
-  <script src="assets/js/cv.js?v=202610302100"></script>
+  <script src="assets/js/cv.js?v=202610301800"></script>
 </body>
 
 </html>
